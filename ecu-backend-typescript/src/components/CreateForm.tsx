@@ -3,7 +3,7 @@ import {IUserContext, UserContext} from '../contexts/UserContext'
 
 const CreateForm = () => {
 
-    const {userRequest, setUserRequest, create} = React.useContext(UserContext) as IUserContext
+    const {userRequest, setUserRequest, create} = React.useContext(UserContext) as IUserContext;
     
   return (
     <form onSubmit={create} className='d-grid mb-5'>

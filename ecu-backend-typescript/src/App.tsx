@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import CreateForm from "./components/CreateForm";
 import UserList from "./components/UserList";
 import UserProvider from "./contexts/UserContext";
