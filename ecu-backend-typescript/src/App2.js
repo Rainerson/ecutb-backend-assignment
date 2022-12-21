@@ -1,17 +1,15 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contacts from "./views/Contacts";
 import Home from "./views/Home";
 import NotFound from "./views/NotFound";
 import ProductDetails from "./views/ProductDetails";
 import Products from "./views/Products";
-import ProductProvider, { ProductContext } from "./contexts/ProductContext";
-import ProductGridSmall from "./sections/ProductGridSmall";
+import ProductProvider from "./contexts/ProductContext";
+
 
 function App2() {
   return (
-    // <></> Kallas för en fragment när det bara är taggar (?), allt måste vara inom denna (ett parent-element)
     <BrowserRouter>
       <ProductProvider>
         <Routes>
@@ -19,7 +17,7 @@ function App2() {
           <Route path="/contacts" element={<Contacts></Contacts>}></Route>
           <Route path="/products" element={<Products></Products>}></Route>
           <Route
-            path="/products/:id"
+            path="/products/:articleNumber"
             element={<ProductDetails></ProductDetails>}
           ></Route>
 

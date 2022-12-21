@@ -6,19 +6,19 @@ import { ProductContextType, useProductContext } from '../contexts/ProductContex
 
 const ProductDetails: React.FC = () => {
 
-  const {id} = useParams<string>()
-  const productContext = useProductContext() as ProductContextType
+  const {articleNumber} = useParams<string>()
+  const {product, getProduct} = useProductContext() as ProductContextType
 
   useEffect(() => {
-    productContext.getProduct(id)
+    getProduct(articleNumber)
   }, [])
-  
+
 
   return (
     <>
       <Navbar></Navbar>
       <div className='container'>
-        <h1>{productContext.product.name}</h1>
+        <h1>{product.name}</h1>
       </div>
       <Footer></Footer>
     </>

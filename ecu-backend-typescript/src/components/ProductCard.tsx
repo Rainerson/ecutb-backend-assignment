@@ -21,7 +21,7 @@ const ProductCard: React.FC<ProductCardType> = ({ item }) => {
                             <button className='card-menu-link'><i className="fa-regular fa-repeat"></i></button>
                             <button className='card-menu-link'><i className="fa-regular fa-bag-shopping"></i></button>
                         </div>
-                        <NavLink to={`/products/${item.name.replace(/ /gi, "-").toLowerCase()}`} className="btn-theme" end><p>SHOP NOW</p>
+                        <NavLink to={`/products/${item.articleNumber.replace(/ /gi, "-").toLowerCase()}`} className="btn-theme" end><p>SHOP NOW</p>
                             <span className="corner-topLeft"></span>
                             <span className="corner-bottomRight"></span>
                         </NavLink>

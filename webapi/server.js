@@ -6,10 +6,10 @@ const bodyParser = require('body-parser')
 
 //middleware
 app.use(cors())
-app.use(express.urlencoded({extended : true}))
+app.use(express.urlencoded({extended : true})) // för att ta emot mer avancerade grejer
 app.use(bodyParser.json())
 
-const usersController = require('./controllers/usersController')
-app.use('/api/users', usersController)
+const productsController = require('./controllers/productsController2')
+app.use('/api/products', productsController)
 
 app.listen(port, () => console.log('webapi is running on 5000'))

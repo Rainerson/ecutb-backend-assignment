@@ -14,12 +14,7 @@ const UserList = () => {
   return (
     <>
       <h3 className="display-6 mb-4">List of Users</h3>
-      {users.map((user: User) => (
-        <div key={user.id} className="mb-3">
-          {user.firstName}
-          {user.lastName}
-        </div>
-      ))}
+      {users.map((user: User) => ( <div key={user.id} className="mb-3">{user.firstName}{user.lastName}</div>))}
     </>
   );
 };

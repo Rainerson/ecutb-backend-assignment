@@ -5,7 +5,7 @@ import {IUserContext, UserContext} from '../contexts/UserContext'
 const UpdateForm = () => {
 
    const id = useParams()
-    const {user, setUser, get, update} = React.useContext(UserContext) as IUserContext
+  const {user, setUser, get, update} = React.useContext(UserContext) as IUserContext
 
     useEffect(() => {
         get(Number(id))
