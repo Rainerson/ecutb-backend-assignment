@@ -6,11 +6,12 @@ import imageEight from '../images/8.png'
 
 const TwoForFortynine: React.FC = () => {
 
-    const {fourTwentyProducts, getFourTwentyProducts} = useProductContext() as ProductContextType
+
+    const {fourFortyProducts, getFourFortyProducts} = useProductContext() as ProductContextType
 
     useEffect(() => {
-      getFourTwentyProducts(4)
-    }, [getFourTwentyProducts])
+      getFourFortyProducts(4)
+    }, [getFourFortyProducts])
     
 
     return (
@@ -19,7 +20,7 @@ const TwoForFortynine: React.FC = () => {
                 <div className="container">
 
                     <div className="two-for-boxes">
-                        <ProductGridSmall title="" items={fourTwentyProducts}></ProductGridSmall>
+                        <ProductGridSmall title="" items={fourFortyProducts}></ProductGridSmall>
                     </div>
                     <div className="two-for-div" style={{ backgroundImage: `url(${imageEight})` }}>
                         <div className='discount-text'>

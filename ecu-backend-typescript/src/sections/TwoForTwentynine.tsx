@@ -5,11 +5,11 @@ import imageSeven from '../images/7.png'
 
 const TwoForTwentynine = () => {
 
-    const {fourFortyProducts, getFourFortyProducts} = useProductContext() as ProductContextType
+    const {fourTwentyProducts, getFourTwentyProducts} = useProductContext() as ProductContextType
 
     useEffect(() => {
-      getFourFortyProducts(4)
-    }, [getFourFortyProducts])
+      getFourTwentyProducts(4)
+    }, [getFourTwentyProducts])
     
   return (
     <>
@@ -25,7 +25,7 @@ const TwoForTwentynine = () => {
                 </div>
             </div>
             <div className="two-for-boxes">
-                <ProductGridSmall title="" items={fourFortyProducts}></ProductGridSmall>
+                <ProductGridSmall title="" items={fourTwentyProducts}></ProductGridSmall>
             </div>
         </div>
     </section>
